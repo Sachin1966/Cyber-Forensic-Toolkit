@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/asach/OneDrive/Desktop/NLP/mlruns/525028298723441362/981d3ed57989427d8053671259288d3a/artifacts
+end_time: 1765212788571
+entry_point_name: ''
+experiment_id: '525028298723441362'
+lifecycle_stage: active
+run_id: 981d3ed57989427d8053671259288d3a
+run_name: upbeat-wasp-433
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765212748998
+status: 3
+tags: []
+user_id: asach

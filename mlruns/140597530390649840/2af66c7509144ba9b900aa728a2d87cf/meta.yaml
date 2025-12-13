@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/asach/OneDrive/Desktop/NLP/mlruns/140597530390649840/2af66c7509144ba9b900aa728a2d87cf/artifacts
+end_time: 1765208058012
+entry_point_name: ''
+experiment_id: '140597530390649840'
+lifecycle_stage: active
+run_id: 2af66c7509144ba9b900aa728a2d87cf
+run_name: traveling-newt-553
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765208053809
+status: 3
+tags: []
+user_id: asach

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/asach/OneDrive/Desktop/NLP/mlruns/109750427545380251/5718e593a5b3491ba815bd8a0044263a/artifacts
+end_time: 1765191061973
+entry_point_name: ''
+experiment_id: '109750427545380251'
+lifecycle_stage: active
+run_id: 5718e593a5b3491ba815bd8a0044263a
+run_name: adaptable-mouse-137
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765191041274
+status: 3
+tags: []
+user_id: asach

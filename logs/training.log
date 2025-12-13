@@ -1,0 +1,73 @@
+
+
+--- STARTING RETRAINING JOB AT 2025-12-08 22:15:24.384776 ---
+--- Session Started: 2025-12-08 22:15:28.391295 ---
+
+--- Training Phishing URL Model ---
+(+) Updated metadata for phishing
+(+) Phishing Model Saved. Acc: 0.94
+
+--- Training Malware Model ---
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-1-1conn.log.labeled.csv ((150000, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-1-1conn.log.labeled.csv ((150000, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-20-1conn.log.labeled.csv ((3209, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-20-1conn.log.labeled.csv ((3209, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-21-1conn.log.labeled.csv ((3286, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-21-1conn.log.labeled.csv ((3286, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-3-1conn.log.labeled.csv ((150000, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-3-1conn.log.labeled.csv ((150000, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-34-1conn.log.labeled.csv ((23145, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-34-1conn.log.labeled.csv ((23145, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-35-1conn.log.labeled.csv ((150000, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-35-1conn.log.labeled.csv ((150000, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-42-1conn.log.labeled.csv ((4426, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-42-1conn.log.labeled.csv ((4426, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-44-1conn.log.labeled.csv ((237, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-44-1conn.log.labeled.csv ((237, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-48-1conn.log.labeled.csv ((150000, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-48-1conn.log.labeled.csv ((150000, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-60-1conn.log.labeled.csv ((150000, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-60-1conn.log.labeled.csv ((150000, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-8-1conn.log.labeled.csv ((10403, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-8-1conn.log.labeled.csv ((10403, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-9-1conn.log.labeled.csv ((150000, 23))
+(+) Loaded ./dataset\dataset4\CTU-IoT-Malware-Capture-9-1conn.log.labeled.csv ((150000, 23))
+(!) Skipping ./dataset\dataset5\NUSW-NB15_features.csv: 'utf-8' codec can't decode byte 0x92 in position 1646: invalid start byte
+(+) Loaded ./dataset\dataset5\UNSW-NB15_1.csv ((150000, 49))
+(+) Loaded ./dataset\dataset5\UNSW-NB15_1.csv ((150000, 49))
+(+) Loaded ./dataset\dataset5\UNSW-NB15_2.csv ((150000, 49))
+(+) Loaded ./dataset\dataset5\UNSW-NB15_2.csv ((150000, 49))
+(+) Loaded ./dataset\dataset5\UNSW-NB15_3.csv ((150000, 49))
+(+) Loaded ./dataset\dataset5\UNSW-NB15_3.csv ((150000, 49))
+(+) Loaded ./dataset\dataset5\UNSW-NB15_4.csv ((150000, 49))
+(+) Loaded ./dataset\dataset5\UNSW-NB15_4.csv ((150000, 49))
+(+) Loaded ./dataset\dataset5\UNSW-NB15_LIST_EVENTS.csv ((208, 3))
+(+) Loaded ./dataset\dataset5\UNSW-NB15_LIST_EVENTS.csv ((208, 3))
+(+) Loaded ./dataset\dataset5\UNSW_NB15_testing-set.csv ((150000, 45))
+(+) Loaded ./dataset\dataset5\UNSW_NB15_testing-set.csv ((150000, 45))
+(+) Loaded ./dataset\dataset5\UNSW_NB15_training-set.csv ((82332, 45))
+(+) Loaded ./dataset\dataset5\UNSW_NB15_training-set.csv ((82332, 45))
+(+) Updated metadata for malware
+(+) Malware Model Saved. Acc: 1.00
+
+--- Training Network IDS Model ---
+(+) Loaded ./dataset\dataset6\test.csv ((561, 22))
+(+) Loaded ./dataset\dataset6\test.csv ((561, 22))
+(+) Loaded ./dataset\dataset6\train.csv ((2619, 22))
+(+) Loaded ./dataset\dataset6\train.csv ((2619, 22))
+(+) Loaded ./dataset\dataset6\val.csv ((561, 22))
+(+) Loaded ./dataset\dataset6\val.csv ((561, 22))
+(+) Updated metadata for network
+(+) Network Model Saved. Acc: 1.00
+
+--- Training Email Model ---
+(+) Updated metadata for email
+(+) Email Model Saved. Acc: 0.98
+
+--- TRAINING JOB COMPLETED SUCCESSFULLY AT 2025-12-08 22:23:09.379258 ---
+
+
+--- STARTING RETRAINING JOB AT 2025-12-10 17:04:27.440901 ---
+--- Session Started: 2025-12-10 17:04:49.036425 ---
+
+--- Training Phishing URL Model ---

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/asach/OneDrive/Desktop/NLP/mlruns/140597530390649840/76453d06cc2e43cf919f19c0ffff99e8/artifacts
+end_time: 1765208698281
+entry_point_name: ''
+experiment_id: '140597530390649840'
+lifecycle_stage: active
+run_id: 76453d06cc2e43cf919f19c0ffff99e8
+run_name: hilarious-goat-812
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765208689710
+status: 3
+tags: []
+user_id: asach

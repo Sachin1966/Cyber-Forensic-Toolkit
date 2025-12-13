@@ -1,0 +1,27 @@
+🚀 Starting End-to-End Test
+
+🔑 Logging in as debug_user@example.com...
+✅ Login successful.
+
+📧 Sending High Risk Email Analysis...
+Analysis Status: 200
+Analysis Response: {'id': 37, 'input_summary': 'URGENT: Verify your account immediately', 'isPhishing': True, 'isSpam': True, 'scan_type': 'Email', 'senderReputation': 'suspicious', 'subject': 'URGENT: Verify your account immediately', 'suspiciousTerms': [], 'threatScore': 90.0, 'timestamp': '2025-12-08T20:56:48.991210'}
+
+🔍 Checking Database Directly...
+❌ Database file not found!
+
+🔔 Checking /api/notifications...
+Notifications Status: 200
+Notifications Count: 1
+Notifications: [
+  {
+    "created_at": "2025-12-08 15:26:49",
+    "id": 5,
+    "is_read": 0,
+    "message": "Detected high risk threat with score 90.0%. Check full report.",
+    "report_id": 37,
+    "title": "High Risk Alert: EMAIL",
+    "user_email": "debug_user@example.com"
+  }
+]
+✅ TEST PASSED: Notification received via API.

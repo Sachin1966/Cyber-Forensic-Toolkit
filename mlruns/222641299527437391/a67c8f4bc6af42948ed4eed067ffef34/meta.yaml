@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/asach/OneDrive/Desktop/NLP/mlruns/222641299527437391/a67c8f4bc6af42948ed4eed067ffef34/artifacts
+end_time: 1765208946166
+entry_point_name: ''
+experiment_id: '222641299527437391'
+lifecycle_stage: active
+run_id: a67c8f4bc6af42948ed4eed067ffef34
+run_name: useful-cow-908
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765208608328
+status: 3
+tags: []
+user_id: asach

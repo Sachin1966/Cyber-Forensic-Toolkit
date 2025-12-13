@@ -1,0 +1,43 @@
+name: ML Training Pipeline
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Weekly on Sunday
+  workflow_dispatch:      # Manual trigger
+
+jobs:
+  train-models:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.9'
+        
+    - name: Install MLOps Dependencies
+      run: |
+        pip install -r forensic-ai-hub/backend/requirements.txt
+        pip install dvc[s3] mlflow
+        
+    - name: Configure DVC (Mock S3)
+      # In production, use real secrets
+      run: |
+        dvc remote add -d myremote s3://mybucket/dvcstore
+        dvc remote modify myremote endpointurl https://s3.amazonaws.com
+        
+    - name: Pull Data
+      # dvc pull # Uncomment when remote is real
+      run: echo "Simulating DVC Pull"
+      
+    - name: Run ML Pipeline
+      run: |
+        # Train all models
+        python ml_pipeline.py --model all
+        
+    - name: Upload Artifacts (Simulated Registry)
+      uses: actions/upload-artifact@v4
+      with:
+        name: trained-models
+        path: forensic-ai-hub/backend/models/*.pkl

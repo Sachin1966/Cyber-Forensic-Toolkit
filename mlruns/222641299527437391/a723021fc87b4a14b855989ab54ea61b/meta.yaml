@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/asach/OneDrive/Desktop/NLP/mlruns/222641299527437391/a723021fc87b4a14b855989ab54ea61b/artifacts
+end_time: 1765208037467
+entry_point_name: ''
+experiment_id: '222641299527437391'
+lifecycle_stage: active
+run_id: a723021fc87b4a14b855989ab54ea61b
+run_name: gaudy-stoat-780
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765207681116
+status: 3
+tags: []
+user_id: asach

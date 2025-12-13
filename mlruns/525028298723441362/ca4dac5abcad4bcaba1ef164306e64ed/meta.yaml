@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/asach/OneDrive/Desktop/NLP/mlruns/525028298723441362/ca4dac5abcad4bcaba1ef164306e64ed/artifacts
+end_time: 1765208089640
+entry_point_name: ''
+experiment_id: '525028298723441362'
+lifecycle_stage: active
+run_id: ca4dac5abcad4bcaba1ef164306e64ed
+run_name: suave-goat-562
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765208058039
+status: 3
+tags: []
+user_id: asach

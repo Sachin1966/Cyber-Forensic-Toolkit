@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/asach/OneDrive/Desktop/NLP/mlruns/109750427545380251/ed81fc7bbbe94ea0aaa5e0b7065ae40c/artifacts
+end_time: 1765207681057
+entry_point_name: ''
+experiment_id: '109750427545380251'
+lifecycle_stage: active
+run_id: ed81fc7bbbe94ea0aaa5e0b7065ae40c
+run_name: skittish-mink-510
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765207668636
+status: 3
+tags: []
+user_id: asach

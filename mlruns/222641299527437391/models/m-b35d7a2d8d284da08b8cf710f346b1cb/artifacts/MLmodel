@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/asach/OneDrive/Desktop/NLP/mlruns/222641299527437391/models/m-b35d7a2d8d284da08b8cf710f346b1cb/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.7.0
+model_id: m-b35d7a2d8d284da08b8cf710f346b1cb
+model_size_bytes: 12360720
+model_uuid: m-b35d7a2d8d284da08b8cf710f346b1cb
+prompts: null
+run_id: 564f3d6254cf4bd5bc26b0e7953578fb
+utc_time_created: '2025-12-08 16:51:58.969405'

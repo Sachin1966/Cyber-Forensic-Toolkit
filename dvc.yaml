@@ -1,0 +1,42 @@
+stages:
+  train_phishing:
+    cmd: python ml_pipeline.py --model phishing
+    deps:
+      - dataset/dataset1
+      - dataset/dataset2
+      - dataset/dataset3
+      - ml_pipeline.py
+    outs:
+      - forensic-ai-hub/backend/models/phishing_model.pkl
+      - forensic-ai-hub/backend/models/phishing_vectorizer.pkl
+    metrics:
+      - mlruns/0/metrics/accuracy:
+          cache: false
+
+  train_malware:
+    cmd: python ml_pipeline.py --model malware
+    deps:
+      - dataset/dataset4
+      - dataset/dataset5
+      - ml_pipeline.py
+    outs:
+      - forensic-ai-hub/backend/models/malware_model.pkl
+      - forensic-ai-hub/backend/models/malware_scaler.pkl
+
+  train_network:
+    cmd: python ml_pipeline.py --model network
+    deps:
+      - dataset/dataset6
+      - ml_pipeline.py
+    outs:
+      - forensic-ai-hub/backend/models/network_ids_model.pkl
+      - forensic-ai-hub/backend/models/network_ids_scaler.pkl
+
+  train_email:
+    cmd: python ml_pipeline.py --model email
+    deps:
+      - dataset/dataset7
+      - ml_pipeline.py
+    outs:
+      - forensic-ai-hub/backend/models/email_model.pkl
+      - forensic-ai-hub/backend/models/email_vectorizer.pkl

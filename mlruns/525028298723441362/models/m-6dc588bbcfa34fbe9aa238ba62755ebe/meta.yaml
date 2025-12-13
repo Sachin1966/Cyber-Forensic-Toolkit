@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/asach/OneDrive/Desktop/NLP/mlruns/525028298723441362/models/m-6dc588bbcfa34fbe9aa238ba62755ebe/artifacts
+creation_timestamp: 1765208085712
+experiment_id: '525028298723441362'
+last_updated_timestamp: 1765208089370
+model_id: m-6dc588bbcfa34fbe9aa238ba62755ebe
+model_type: null
+name: model
+source_run_id: ca4dac5abcad4bcaba1ef164306e64ed
+status: 2
+status_message: null

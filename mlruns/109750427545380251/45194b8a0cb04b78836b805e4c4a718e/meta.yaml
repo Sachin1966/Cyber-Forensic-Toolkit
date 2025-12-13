@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/asach/OneDrive/Desktop/NLP/mlruns/109750427545380251/45194b8a0cb04b78836b805e4c4a718e/artifacts
+end_time: 1765191381215
+entry_point_name: ''
+experiment_id: '109750427545380251'
+lifecycle_stage: active
+run_id: 45194b8a0cb04b78836b805e4c4a718e
+run_name: salty-foal-569
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765191351259
+status: 3
+tags: []
+user_id: asach

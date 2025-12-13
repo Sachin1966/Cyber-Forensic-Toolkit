@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/asach/OneDrive/Desktop/NLP/mlruns/140597530390649840/cc887ff2652340d78ff49c33d2994654/artifacts
+end_time: 1765212748970
+entry_point_name: ''
+experiment_id: '140597530390649840'
+lifecycle_stage: active
+run_id: cc887ff2652340d78ff49c33d2994654
+run_name: efficient-midge-962
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765212744312
+status: 3
+tags: []
+user_id: asach
