@@ -8,15 +8,18 @@ RUN apt-get update && apt-get install -y \
     gcc \
     && rm -rf /var/lib/apt/lists/*
 
-# Set Working Directory
+# Set Working Directory for the build process
 WORKDIR /app
 
-# Copy Requirements and Install
-COPY requirements.txt .
+# Copy Requirements (path relative to root context)
+COPY forensic-ai-hub/backend/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy Application Code
+# Copy Entire Repo (so we have access to /app/train_dynamic.py, /app/dataset, etc.)
 COPY . .
+
+# Change Working Directory to Backend for execution
+WORKDIR /app/forensic-ai-hub/backend
 
 # Environment Variables (Overridden by Render)
 ENV FLASK_ENV=production

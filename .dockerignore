@@ -1,0 +1,17 @@
+node_modules
+forensic-ai-hub/node_modules
+.git
+.venv
+venv
+__pycache__
+*.pyc
+*.log
+.dvc
+.dvcignore
+coverage
+dist
+build
+mlruns
+# Exclude model files if they are huge and downloaded at runtime, but user wants them included.
+# User wants "push every code", implies model files in repo.
+# So we keep models.
