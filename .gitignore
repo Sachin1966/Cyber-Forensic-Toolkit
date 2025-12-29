@@ -1,20 +1,13 @@
-<<<<<<< HEAD
-__pycache__/
-*.pyc
+# Local additions
 node_modules/
-.env
-dist/
-build/
-venv/
-.DS_Store
-.vscode/
-.idea/
-coverage/
 tsc_output/
 dataset/
-=======
+.idea/
+.vscode/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
+*.pyc
 *.py[codz]
 *$py.class
 
@@ -220,4 +213,3 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
->>>>>>> e5d7e59f722df68c9cb398f7e851d112e2fa292f
