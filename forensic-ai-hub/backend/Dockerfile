@@ -24,6 +24,7 @@ WORKDIR /app/forensic-ai-hub/backend
 # Environment Variables (Overridden by Render)
 ENV FLASK_ENV=production
 ENV PORT=5000
+ENV PYTHONPATH=/app/forensic-ai-hub/backend:$PYTHONPATH
 
 # Expose Port
 EXPOSE 5000
