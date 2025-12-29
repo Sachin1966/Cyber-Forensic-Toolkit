@@ -1,0 +1,38 @@
+{
+  "phishing": {
+    "name": "Phishing URL Model",
+    "accuracy": 94.1,
+    "last_trained": "2025-12-16 13:54:19",
+    "status": "Ready",
+    "description": "Detects malicious and phishing URLs using extracted features",
+    "precision": 94.2,
+    "recall": 94.1
+  },
+  "malware": {
+    "name": "Malware Detection Model",
+    "accuracy": 100.0,
+    "last_trained": "2025-12-08 22:22:04",
+    "status": "Ready",
+    "description": "Classifies files as malicious or benign based on metadata",
+    "precision": 100.0,
+    "recall": 100.0
+  },
+  "network": {
+    "name": "Network IDS Model",
+    "accuracy": 100.0,
+    "last_trained": "2025-12-08 22:22:28",
+    "status": "Ready",
+    "description": "Detects network intrusions and anomalies in PCAP files",
+    "precision": 100.0,
+    "recall": 100.0
+  },
+  "email": {
+    "name": "Email Spam Model",
+    "accuracy": 97.7,
+    "last_trained": "2025-12-08 22:23:08",
+    "status": "Ready",
+    "description": "Identifies spam and phishing emails using NLP",
+    "precision": 97.7,
+    "recall": 97.7
+  }
+}

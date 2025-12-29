@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/asach/OneDrive/Desktop/NLP/mlruns/109750427545380251/e5c6ea17256949a6b6f537be07c6bae2/artifacts
+end_time: 1765873459663
+entry_point_name: ''
+experiment_id: '109750427545380251'
+lifecycle_stage: active
+run_id: e5c6ea17256949a6b6f537be07c6bae2
+run_name: big-mole-381
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765873420521
+status: 3
+tags: []
+user_id: asach

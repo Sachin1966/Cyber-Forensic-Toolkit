@@ -1,0 +1,20 @@
+🚀 Starting End-to-End Test
+
+🔑 Logging in as debug_user@example.com...
+✅ Login successful.
+
+📧 Sending High Risk Email Analysis...
+Analysis Status: 200
+Analysis Response: {'id': 31, 'isPhishing': True, 'isSpam': True, 'senderReputation': 'suspicious', 'subject': 'URGENT: Verify your account immediately', 'suspiciousTerms': [], 'threatScore': 90.0, 'timestamp': '2025-12-08T15:07:17.592209'}
+
+🔍 Checking Database Directly...
+👥 Users count: 5
+   Last user: {'id': 5, 'email': 'debug_user@example.com', 'name': 'Debug User', 'picture': 'https://ui-avatars.com/api/?name=Debug User&background=random', 'google_id': None, 'created_at': '2025-12-08 09:36:29', 'password_hash': 'scrypt:32768:8:1$OvbNDYWJ1lQIYeir$0fb18b7b0b169e77ccc7be93df6b28e56c2788bd5e2da90a2d0f68d300db3110375a4c27244ac739eb3a933e7377221bda472a310875f5ccc62c03c6fc77eb62'}
+📄 Last Scan: {'id': 31, 'scan_type': 'email', 'input_summary': 'URGENT: Verify your account immediately', 'prediction': 'Spam/Phishing', 'confidence': 90.0, 'is_threat': 1, 'timestamp': '2025-12-08 09:37:17', 'details': '{"subject": "URGENT: Verify your account immediately", "isPhishing": true, "isSpam": true, "threatScore": 90.0, "suspiciousTerms": [], "senderReputation": "suspicious", "timestamp": "2025-12-08T15:07:17.592209"}'}
+🔔 No notifications found.
+
+🔔 Checking /api/notifications...
+Notifications Status: 200
+Notifications Count: 0
+Notifications: []
+❌ TEST FAILED: No notifications returned by API.
