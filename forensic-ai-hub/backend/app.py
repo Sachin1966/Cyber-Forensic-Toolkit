@@ -11,23 +11,23 @@ import os
 import werkzeug
 import time
 import traceback
-from database import init_db, get_stats, update_stats, get_recent_activity, log_scan, get_reports, get_report_by_id, create_user, get_user_by_email, update_user_settings, delete_user
+from backend.database import init_db, get_stats, update_stats, get_recent_activity, log_scan, get_reports, get_report_by_id, create_user, get_user_by_email, update_user_settings, delete_user
 from google.oauth2 import id_token
 from google.auth.transport import requests as google_requests
 from dotenv import load_dotenv
 from flask_jwt_extended import JWTManager, create_access_token, create_refresh_token, jwt_required, get_jwt_identity, get_jwt
 from werkzeug.security import generate_password_hash, check_password_hash
-from utils.report_generator import generate_pdf_report
-from utils.alerts import trigger_high_risk_alert
+from backend.utils.report_generator import generate_pdf_report
+from backend.utils.alerts import trigger_high_risk_alert
 
 # Import prediction modules
 # We wrap imports in try-except to prevent app crash if a module has syntax errors
 try:
-    from predictions.url import predict_url
-    from predictions.email import predict_email
-    from predictions.network import predict_network
-    from predictions.malware import predict_malware
-    from utils.pcap_analysis import analyze_pcap_file
+    from backend.predictions.url import predict_url
+    from backend.predictions.email import predict_email
+    from backend.predictions.network import predict_network
+    from backend.predictions.malware import predict_malware
+    from backend.utils.pcap_analysis import analyze_pcap_file
 except ImportError as e:
     print(f"❌ Error importing prediction modules: {e}")
     traceback.print_exc()
@@ -691,10 +691,10 @@ def api_train_status():
 @app.route('/api/models/reload', methods=['POST'])
 def api_models_reload():
     try:
-        from predictions.url import reload_model as reload_url
-        from predictions.email import reload_model as reload_email
-        from predictions.malware import reload_model as reload_malware
-        from predictions.network import reload_model as reload_network
+        from backend.predictions.url import reload_model as reload_url
+        from backend.predictions.email import reload_model as reload_email
+        from backend.predictions.malware import reload_model as reload_malware
+        from backend.predictions.network import reload_model as reload_network
 
         results = {
             'url': reload_url(),

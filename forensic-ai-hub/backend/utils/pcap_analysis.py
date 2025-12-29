@@ -9,9 +9,8 @@ import os
 import sys
 from datetime import datetime
 
-# Add backend directory to path to import database
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
-from database import log_scan, update_stats
+
+from backend.database import log_scan, update_stats
 
 def analyze_pcap_file(file_path):
     if not SCAPY_AVAILABLE:

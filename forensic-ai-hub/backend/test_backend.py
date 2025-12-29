@@ -3,12 +3,10 @@ import sys
 import requests
 import json
 
-# Add current dir to path to import modules
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from predictions.url import predict_url
-from predictions.email import predict_email
-from predictions.malware import predict_malware
+from backend.predictions.url import predict_url
+from backend.predictions.email import predict_email
+from backend.predictions.malware import predict_malware
 # from predictions.network import predict_network
 
 def test_systems():
