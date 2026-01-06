@@ -34,13 +34,15 @@ export function Header() {
   const [notifications, setNotifications] = useState<NotificationItem[]>([]);
   const [unreadCount, setUnreadCount] = useState(0);
 
+  const API_BASE = import.meta.env.VITE_API_URL || "";
+
   const fetchNotifications = async () => {
     if (!user) return;
     try {
       const token = localStorage.getItem('access_token');
       if (!token) return;
 
-      const res = await fetch('/api/notifications', {
+      const res = await fetch(`${API_BASE}/api/notifications`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       if (res.ok) {
@@ -68,7 +70,7 @@ export function Header() {
   const handleNotificationClick = async (n: NotificationItem) => {
     try {
       const token = localStorage.getItem('access_token');
-      await fetch(`/api/notifications/${n.id}/read`, {
+      await fetch(`${API_BASE}/api/notifications/${n.id}/read`, {
         method: 'POST',
         headers: { 'Authorization': `Bearer ${token}` }
       });

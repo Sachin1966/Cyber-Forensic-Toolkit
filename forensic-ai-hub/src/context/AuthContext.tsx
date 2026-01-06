@@ -66,7 +66,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             const refreshToken = localStorage.getItem('refresh_token');
             if (!refreshToken) throw new Error("No refresh token");
 
-            const response = await fetch('/api/auth/refresh', {
+            const API_BASE = import.meta.env.VITE_API_URL || "";
+            const response = await fetch(`${API_BASE}/api/auth/refresh`, {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${refreshToken}`

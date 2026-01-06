@@ -12,28 +12,30 @@ import { useState } from "react";
 import { toast } from "sonner";
 
 // Fetch functions
+const API_BASE = import.meta.env.VITE_API_URL || "";
+
 const fetchLogs = async () => {
-    const res = await fetch('/api/mlops/logs');
+    const res = await fetch(`${API_BASE}/api/mlops/logs`);
     return res.json();
 };
 
 const fetchMetrics = async () => {
-    const res = await fetch('/api/mlops/metrics');
+    const res = await fetch(`${API_BASE}/api/mlops/metrics`);
     return res.json();
 };
 
 const fetchRegistry = async () => {
-    const res = await fetch('/api/mlops/registry');
+    const res = await fetch(`${API_BASE}/api/mlops/registry`);
     return res.json();
 };
 
 const fetchSystem = async () => {
-    const res = await fetch('/api/mlops/system');
+    const res = await fetch(`${API_BASE}/api/mlops/system`);
     return res.json();
 };
 
 const fetchDvc = async () => {
-    const res = await fetch('/api/mlops/dvc-status');
+    const res = await fetch(`${API_BASE}/api/mlops/dvc-status`);
     return res.json();
 };
 
@@ -78,7 +80,7 @@ const MLOps = () => {
         toast.info("Initializing background training pipeline...");
         try {
             const token = localStorage.getItem('access_token');
-            const res = await fetch('/api/mlops/retrain', {
+            const res = await fetch(`${API_BASE}/api/mlops/retrain`, {
                 method: 'POST',
                 headers: { 'Authorization': `Bearer ${token}` }
             });

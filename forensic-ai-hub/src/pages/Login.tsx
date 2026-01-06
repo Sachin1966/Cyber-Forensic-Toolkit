@@ -18,6 +18,8 @@ const Login = () => {
     const [name, setName] = useState("");
     const [isLoading, setIsLoading] = useState(false);
 
+    const API_BASE = import.meta.env.VITE_API_URL || "";
+
     useEffect(() => {
         console.log("Login: checking user state", user);
         if (user) {
@@ -31,7 +33,7 @@ const Login = () => {
             try {
                 const decoded: any = jwtDecode(credentialResponse.credential);
 
-                const response = await fetch('/api/auth/google', {
+                const response = await fetch(`${API_BASE}/api/auth/google`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ token: credentialResponse.credential }),
@@ -70,7 +72,7 @@ const Login = () => {
             : { email, password };
 
         try {
-            const response = await fetch(`${endpoint}`, {
+            const response = await fetch(`${API_BASE}${endpoint}`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(body),
