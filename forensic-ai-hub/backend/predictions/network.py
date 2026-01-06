@@ -17,11 +17,12 @@ def reload_model():
         features_path = os.path.join(MODELS_DIR, 'network_ids_features.pkl')
         
         if os.path.exists(model_path) and os.path.exists(scaler_path):
-            model = joblib.load(model_path)
-            scaler = joblib.load(scaler_path)
+            # Use mmap_mode='r' to map file into memory, saving RAM
+            model = joblib.load(model_path, mmap_mode='r')
+            scaler = joblib.load(scaler_path, mmap_mode='r')
             if os.path.exists(features_path):
                 feature_names = joblib.load(features_path)
-            print("✔ Network IDS model loaded.")
+            print("✔ Network IDS model loaded (mmap).")
             return True
         else:
             print(f"❌ Network model files missing in {MODELS_DIR}")

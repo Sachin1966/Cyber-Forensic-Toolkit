@@ -19,9 +19,10 @@ def reload_model():
         vectorizer_path = os.path.join(MODELS_DIR, 'email_vectorizer.pkl')
         
         if os.path.exists(model_path) and os.path.exists(vectorizer_path):
-            model = joblib.load(model_path)
-            vectorizer = joblib.load(vectorizer_path)
-            print("✔ Email Spam model loaded.")
+            # Use mmap_mode='r' to map file into memory, saving RAM
+            model = joblib.load(model_path, mmap_mode='r')
+            vectorizer = joblib.load(vectorizer_path, mmap_mode='r')
+            print("✔ Email Spam model loaded (mmap).")
             return True
         else:
             print(f"❌ Email model files missing in {MODELS_DIR}")
