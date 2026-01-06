@@ -229,7 +229,11 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+            <div className="absolute bottom-4 left-4 text-xs text-muted-foreground/30 font-mono">
+                API: {API_BASE || "(not set)"}
+            </div>
         </div>
+        </div >
     );
 };
 

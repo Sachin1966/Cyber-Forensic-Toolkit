@@ -50,7 +50,7 @@ app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(hours=1)
 app.config['JWT_REFRESH_TOKEN_EXPIRES'] = timedelta(days=30)
 jwt = JWTManager(app)
 
-CORS(app, supports_credentials=True) # Enable CORS for all routes with credentials support
+CORS(app, resources={r"/api/*": {"origins": "*"}}, supports_credentials=True) # Enable CORS for all routes
 
 # Initialize DB
 try:
